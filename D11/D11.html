@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="unnamed.jpg" type="image/x-icon">
+    <title>Tabela</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        html {
+            height: 100%;
+        }
+        body {
+            background-image: linear-gradient(to top, #4A9DFF, #43BAE8, #43e8a3, #4AFF9C);
+        }
+        main {
+            min-width: 400px;
+            max-width: 400px;
+            margin: auto;
+            padding: 50px;
+            background-image: linear-gradient(to top, #348ff8, #2bb6ec, #24e494, #26fd87);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.596);
+            border-radius: 10px;
+            height: 50%;
+            user-select: none;
+        }
+        table {
+            user-select: none;
+        }
+        h1 {
+            text-align: center;
+            color: black;
+            text-shadow: 1px 1px 2px black;
+            font-weight: bolder;
+            font-size: 2.5em;
+            
+        }
+        td, th {
+            border: 2px solid black;
+            padding: 8px;
+            text-align: center;
+            vertical-align: middle;
+            box-shadow: 1px 1px 1px black;
+            font-weight: bolder;
+            user-select: none;
+        }
+        th {
+            background-color: rgb(0, 255, 136);
+            user-select: none;
+        }
+        td {
+            background-color: rgb(0, 247, 255);
+        }
+        th:hover {
+            background-color: rgba(1, 161, 86, 0.603);
+            transition-duration: 0.5s;
+        }
+        td:hover {
+            background-color: rgba(0, 167, 173, 0.623);
+            transition-duration: 0.5s;
+        }  
+        h1:hover {
+            color: aqua;
+            transition-duration: 1s;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            font-style: italic;
+            font-weight: bolder;
+            width: 100%;
+            text-align: center;
+            background-image: linear-gradient(to left, lightgreen, cyan);
+            color: hot;
+        }
+    </style>
+</head>
+<body>
+    <h1>TABELA</h1>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    
+                </tr>
+                <tr>
+                    <th rowspan="3">Área</th>
+                    <th rowspan="3">Disciplinas</th>
+                    <th colspan="2">Notas</th>
+                    <th rowspan="3">Média</th>
+                    
+                </tr>
+                <tr>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="5" >Exatas</td> 
+                </tr>
+                
+                <tr>
+                    
+                    <td>Matemática</td> 
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    
+                </tr>
+                <tr>
+                    <td>Física</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    
+                </tr>
+                <tr>
+                    <td>Química</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    
+                </tr>
+                <tr>
+                    <th colspan="4">Média de Exatas</th> 
+                    <th>0.0</th>
+                </tr>
+                <tr>
+                    <td rowspan="3" >Humanas</td>
+                </tr>
+                <tr>
+                    <td>História</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <th colspan="4">Média de Humanas</th>
+                    <th>0.0</th>
+                </tr>
+            </tbody>
+    </table>
+    </main>
+    <footer>
+        <p>&copy;Tevo</p>
+    </footer>
+</body>
+</html>

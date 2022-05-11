@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="unnamed.jpg" type="image/x-icon">
+    <title>Desafio de Tabela</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            height: 100%;
+        }
+        body {
+            background-image: linear-gradient(-45deg, rgb(252, 216, 251), rgb(252, 191, 249), rgb(99, 243, 236), rgb(28, 240, 240));
+            height: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        main {
+            min-width: 400px;
+            max-width: 400px;
+            margin: auto;
+            padding-left: 120px;
+            padding-right: 120px;
+            padding-bottom: 160px;
+            padding-top: 10px;
+            background-color: rgba(131, 148, 245, 0.74);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+            border-radius: 10px;
+            height: 50%;
+            user-select: none;
+            
+        }
+        h1 {
+            text-align: center;
+            color: black;
+            text-shadow: 1px 1px 2px black;
+            font-weight: bolder;
+            font-size: 2.5em;
+        }
+        table {
+            width: 400px;
+            height: 400px;
+            user-select: none;
+        }
+        td {
+            border: 2px solid black;
+            padding: 8px;
+            text-align: center;
+            vertical-align: middle;
+            box-shadow: 1px 1px 1px black;
+            font-weight: bolder;
+            font-size: 1.4em;
+            cursor: pointer;
+            user-select: none;
+        }
+        td.impar:hover {
+            background-color: rgb(132, 250, 250);
+            transition-duration: 0.5s;
+        }
+        td.par:hover {
+            background-color: pink;
+            transition-duration: 0.5s;
+        }
+        h1:hover {
+            color: plum;
+            transition-duration: 0.5s;
+            user-select: none;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            font-style: italic;
+            font-weight: bolder;
+            width: 100%;
+            text-align: center;
+            background-image: linear-gradient(to right, pink, cyan);
+            color: hot;
+            
+        }
+        h2 {
+            text-align: center;
+            font-size: medium;
+            font-weight: bolder;
+        }
+        p {
+        }
+        p#rosa {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            color: pink;
+            background-image: linear-gradient(-45deg, pink,cyan);
+        }
+        p#azul {
+            color: aqua;
+            background-image: linear-gradient(45deg, pink,cyan);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        p#e {
+            color: black;
+            
+            background-image: linear-gradient(to right,rgba(131, 148, 245, 0.74), rgba(131, 148, 245, 0.74), pink,cyan,cyan,pink,rgba(131, 148, 245, 0.74), rgba(131, 148, 245, 0.74));
+        }
+    </style>
+</head>
+<body>
+    <h1>TABELA</h1>
+    <main>
+        <table>
+            <h2><p id="rosa">PINK</p><p id="e">&</p><p id="azul">BLUE</p></h2>
+            <tr>
+                <td class="impar" id="b1" onclick="botao()" ondblclick="botao2()">1</td>
+                <td class="par" id="b2" onclick="botao()" ondblclick="botao2()">2</td>
+                <td rowspan="2" class="impar" id="b3" onclick="botao()" ondblclick="botao2()">3</td>
+                <td class="par" id="b4" onclick="botao()" ondblclick="botao2()">4</td>
+            </tr>
+            <tr>
+                <td class="impar" id="b5" onclick="botao()" ondblclick="botao2()">5</td>
+                <td class="par" id="b6" onclick="botao()" ondblclick="botao2()">6</td>
+                <td class="impar" id="b7" onclick="botao()" ondblclick="botao2()">7</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="par" id="b8" onclick="botao()" ondblclick="botao2()">8</td>
+                <td class="impar" id="b9" onclick="botao()" ondblclick="botao2()">9</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="par" id="b10" onclick="botao()" ondblclick="botao2()">10</td>
+                <td colspan="2" class="impar" id="b11" onclick="botao()" ondblclick="botao2()">11</td>
+                <td class="par" id="b12" onclick="botao()" ondblclick="botao2()">12</td>
+            </tr>
+            <tr>
+                <td class="impar" id="b13" onclick="botao()" ondblclick="botao2()">13</td>
+                <td class="par" id="b14" onclick="botao()" ondblclick="botao2()">14</td>
+                <td class="impar" id="b15" onclick="botao()" ondblclick="botao2()">15</td>
+            </tr>
+        </table>
+    </main>
+    
+    <footer>
+        <p>&copy;Tevo</p>
+    </footer>
+</body>
+<script>
+    function botao() {  
+        document.getElementById("b1").style.backgroundColor = "hotpink";
+        document.getElementById("b2").style.backgroundColor = "hotpink";
+        document.getElementById("b3").style.backgroundColor = "hotpink";
+        document.getElementById("b4").style.backgroundColor = "hotpink";
+        document.getElementById("b5").style.backgroundColor = "hotpink";
+        document.getElementById("b6").style.backgroundColor = "hotpink";
+        document.getElementById("b7").style.backgroundColor = "hotpink";
+        document.getElementById("b8").style.backgroundColor = "hotpink";
+        document.getElementById("b9").style.backgroundColor = "hotpink";
+        document.getElementById("b10").style.backgroundColor = "hotpink";
+        document.getElementById("b11").style.backgroundColor = "hotpink";
+        document.getElementById("b12").style.backgroundColor = "hotpink";
+        document.getElementById("b13").style.backgroundColor = "hotpink";
+        document.getElementById("b14").style.backgroundColor = "hotpink";
+        document.getElementById("b15").style.backgroundColor = "hotpink";
+        
+    }
+    function botao2() {
+        document.getElementById("b1").style.backgroundColor = "cyan";
+        document.getElementById("b2").style.backgroundColor = "cyan";
+        document.getElementById("b3").style.backgroundColor = "cyan";
+        document.getElementById("b4").style.backgroundColor = "cyan";
+        document.getElementById("b5").style.backgroundColor = "cyan";
+        document.getElementById("b6").style.backgroundColor = "cyan";
+        document.getElementById("b7").style.backgroundColor = "cyan";
+        document.getElementById("b8").style.backgroundColor = "cyan";
+        document.getElementById("b9").style.backgroundColor = "cyan";
+        document.getElementById("b10").style.backgroundColor = "cyan";
+        document.getElementById("b11").style.backgroundColor = "cyan";
+        document.getElementById("b12").style.backgroundColor = "cyan";
+        document.getElementById("b13").style.backgroundColor = "cyan";
+        document.getElementById("b14").style.backgroundColor = "cyan";
+        document.getElementById("b15").style.backgroundColor = "cyan";
+    }
+</script>
+</html>
